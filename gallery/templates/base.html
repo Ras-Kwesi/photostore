@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    {% if title %}
+    <title>Photostore</title>
+    {% else %}
+    <title> Photostore </title>
+    {% endif %}
+
+    {% load bootstrap4 %}
+    {% load static %}
+
+
+    {% block styles %}
+        {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% endblock %}
+</head>
+{% load bootstrap4 %}
+{% load static %}
+<body>
+{% include 'navbar.html' %}
+
+{% block content %}
+
+
+{% endblock %}
+</body>
+</html>
