@@ -33,5 +33,7 @@ class Image(models.Model):
     def deleteImage(self):
         self.delete()
 
-    # @classmethod
-    # def getImage(cls):
+    @classmethod
+    def getImage(cls):
+        image = cls.objects.all()
+        return image
