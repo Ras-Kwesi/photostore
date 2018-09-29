@@ -14,10 +14,31 @@ def singleimage(request,image_id):
         raise Http404()
     return render(request,"location.html", {"image":image})
 
-def imagesbylocation(request):
-    try:
-        images = Image.collectimagelocation()
-    except DoesNotExist:
-        raise Http404()
+def imagesbylocation(request,):
 
-    return render(request,'location.html',{'images':images})
+    if 'images' in request.GET and request.GET["images"]:
+        area = request.GET.get("images")
+        searched_images = Image.collectimagelocation(area)
+        message = f"{area}"
+
+        return render(request, 'location.html',{"message":message,"images": searched_images})
+
+    else:
+        message = "You haven't searched for any term"
+        return render(request, 'location.html',{"message":message})
+
+
+
+
+def imagesbycategory(request,):
+
+    if 'images' in request.GET and request.GET["images"]:
+        area = request.GET.get("images")
+        searched_images = Image.collectimagecategory(area)
+        message = f"{area}"
+
+        return render(request, 'category.html',{"message":message,"images": searched_images})
+
+    else:
+        message = "You haven't searched for any existing Category"
+        return render(request, 'location.html',{"message":message})

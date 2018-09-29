@@ -40,8 +40,11 @@ class Image(models.Model):
 
     @classmethod
     def collectimagelocation(cls,area):
-        images = cls.objects.filter(locationkey__id=area)
+        # images = cls.objects.filter(locationkey__location=area)
+        images = cls.objects.filter(locationkey__location__icontains=area)
         return images
+    #     location = Location.objects.filter(location = area)
+    #     images = cls.objects.filter(location_id =
 
     @classmethod
     def collectimagecategory(cls,cat):
