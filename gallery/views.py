@@ -7,4 +7,9 @@ def index(request):
     images = Image.getImages()
     return render(request,'index.html',{'images':images})
 
-def singleimage(request):
+def singleimage(request,image_id):
+    try:
+        image = Image.objects.get(id=image_id)
+    except DoesNotExist:
+        raise Http404()
+    return render(request,"location.html", {"image":image})
