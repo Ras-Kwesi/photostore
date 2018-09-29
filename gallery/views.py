@@ -15,10 +15,9 @@ def singleimage(request,image_id):
     return render(request,"location.html", {"image":image})
 
 def imagesbylocation(request):
-    images= Image.collectimagelocation()
     try:
         images = Image.collectimagelocation()
     except DoesNotExist:
         raise Http404()
 
-    return render(request,'location.html',images=images)
+    return render(request,'location.html',{'images':images})
