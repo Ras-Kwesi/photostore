@@ -34,6 +34,10 @@ class Image(models.Model):
     def saveImage(self):
         self.save()
 
+    @classmethod
+    def updateimage(cls,id):
+        image = cls.objects.get(id = id)
+        return image
 
     def deleteImage(self):
         self.delete()
