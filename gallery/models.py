@@ -13,6 +13,11 @@ class Location(models.Model):
 class Category(models.Model):
     category = models.CharField(max_length=20)
 
+    @classmethod
+    def getcategories(cls):
+        categories = cls.objects.all()
+        return categories
+
     def __str__(self):
         return self.category
 
@@ -48,5 +53,5 @@ class Image(models.Model):
 
     @classmethod
     def collectimagecategory(cls,cat):
-        images = cls.objects.filter(categorykey__id=cat)
+        images = cls.objects.filter(categorykey__category__icontains=cat)
         return images

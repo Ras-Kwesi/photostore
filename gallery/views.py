@@ -5,7 +5,8 @@ from .models import Image,Category,Location
 # Create your views here.
 def index(request):
     images = Image.getImages()
-    return render(request,'index.html',{'images':images})
+    categories = Category.getcategories()
+    return render(request,'index.html',{'images':images, "categories":categories})
 
 def singleimage(request,image_id):
     try:
@@ -33,9 +34,9 @@ def imagesbylocation(request,):
 def imagesbycategory(request,):
 
     if 'images' in request.GET and request.GET["images"]:
-        area = request.GET.get("images")
-        searched_images = Image.collectimagecategory(area)
-        message = f"{area}"
+        cat = request.GET.get("images")
+        searched_images = Image.collectimagecategory(cat)
+        message = f"{cat}"
 
         return render(request, 'category.html',{"message":message,"images": searched_images})
 

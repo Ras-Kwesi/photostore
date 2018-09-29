@@ -16,19 +16,8 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
                     {% for category in categories %}
-                    <a class="dropdown-item" href='{{/category}}'>{{category.category}}</a>
+                    <a class="dropdown-item" href="/category?images={{category.category}}">{{category.category}}</a>
                     {% endfor %}
-
-
-                    <a class="dropdown-item" href="#">Movies</a>
-                    <a class="dropdown-item" href="#">Animation</a>
-                    <a class="dropdown-item" href="#">Sports</a>
-                    <a class="dropdown-item" href="#">Wallpapers</a>
-                    <a class="dropdown-item" href="#">Educational</a>
-                    <a class="dropdown-item" href="#">Quotes</a>
-                    <a class="dropdown-item" href="#">Gifs</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Nature</a>
                 </div>
             </li>
         </ul>
