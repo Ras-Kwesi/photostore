@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed3b3d13-bb46-4321-a74a-0be4cfdf0e92" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/photostore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/photostore/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,6 +46,7 @@
         <counts>
           <entry key="Procfile" value="10" />
           <entry key="css" value="41" />
+          <entry key="env" value="14" />
           <entry key="gitignore" value="6" />
           <entry key="html" value="1134" />
           <entry key="md" value="363" />
@@ -59,7 +59,7 @@
           <entry key="CSS" value="41" />
           <entry key="HTML" value="1134" />
           <entry key="Markdown" value="363" />
-          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="PLAIN_TEXT" value="43" />
           <entry key="Python" value="2583" />
         </counts>
       </usages-collector>
@@ -109,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photostore/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="1380">
+              <caret line="92" column="59" lean-forward="true" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
               <folding>
                 <element signature="e#312#321#0" expanded="true" />
               </folding>
@@ -118,7 +118,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="553">
@@ -127,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="65" selection-start-column="65" selection-end-column="65" />
+            <state relative-caret-position="120">
+              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -185,9 +185,9 @@
         <option value="$PROJECT_DIR$/gallery/templates/location.html" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/runtime.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/photostore/settings.py" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -277,7 +277,7 @@
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.101739585" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.101739585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -288,7 +288,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33054394" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33054394" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -296,7 +296,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.101739585" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.101739585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -307,13 +307,16 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33054394" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33054394" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -456,30 +459,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="65" selection-start-column="65" selection-end-column="65" />
+        <state relative-caret-position="553">
+          <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photostore/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="1380">
+          <caret line="92" column="59" lean-forward="true" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
           <folding>
             <element signature="e#312#321#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
+        <state relative-caret-position="120">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
