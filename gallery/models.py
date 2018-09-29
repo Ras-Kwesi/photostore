@@ -34,6 +34,16 @@ class Image(models.Model):
         self.delete()
 
     @classmethod
-    def getImage(cls):
-        image = cls.objects.all()
-        return image
+    def getImages(cls):
+        images = cls.objects.all()
+        return images
+
+    @classmethod
+    def collectimagelocation(cls,area):
+        images = cls.objects.filter(locationkey__id=area)
+        return images
+
+    @classmethod
+    def collectimagecategory(cls,cat):
+        images = cls.objects.filter(categorykey__id=cat)
+        return images
