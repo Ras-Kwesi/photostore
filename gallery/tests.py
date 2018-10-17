@@ -19,3 +19,6 @@ class ImageTestClass(TestCase):
         self.monalisa.saveImage()
         images = Image.objects.all()
         self.assertTrue(len(images)>1)
+
+
+    def test_
